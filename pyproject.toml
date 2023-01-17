@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "modeling"
+version = "0.1.0"
+description = "Modeling of scraper data"
+authors = ["Rokas Klioštoraitis <r.kliostoraitis@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "3.10.*"
+scraper = {git = "https://github.com/RoKlio/movie_scraper.git", rev = "main"}
+pandas = "^1.5.2"
+
+
+[tool.poetry.group.dev.dependencies]
+mypy = "^0.991"
+flake8 = "^6.0.0"
+black = "^22.12.0"
+pycln = "^2.1.2"
+Flake8-pyproject = "^1.2.2"
+cloudpickle = "^2.2.0"
+ipykernel = "^6.20.2"
+pyarrow = "^10.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
