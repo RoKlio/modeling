@@ -8,8 +8,10 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "3.10.*"
-scraper = {git = "https://github.com/RoKlio/movie_scraper.git", rev = "main"}
+scraper = {git = "https://github.com/RoKlio/movie_scraper.git"}
 pandas = "^1.5.2"
+seaborn = "^0.12.2"
+scikit-learn = "^1.2.0"
 
 
 [tool.poetry.group.dev.dependencies]
